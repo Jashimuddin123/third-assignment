@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--  daisyui link  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.3/dist/full.css" rel="stylesheet" type="text/css" />
+    <!-- tailwind link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- custom color  -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              
+              }
+            }
+          }
+        }
+      </script>    
+</head>
+<body>
+<header>
+  <div class="navbar bg-red-500 max-w-screen max-w-screen-lg mx-auto rounded-full text-white">
+    <!-- ul list -->
+    <div class="navbar-center hidden lg:flex">
+      <ul class="menu menu-horizontal px-1">
+        <li><a>Home</a></li>
+        <li><a>About Us</a></li>
+       
+        <li><a>Shop</a></li>
+        <li><a>All Fruits</a></li>
+      </ul>
+    </div>
+    <!-- daisyui -->
+    <div class="navbar-start ">
+      <div class="dropdown">
+        <label tabindex="0" class="btn btn-ghost lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+        </label>
+  
+      </div>
+      <img class="w-10" src="./images/logo.png" alt="">
+      <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+    </div>
+    
+    <div class="navbar-end">
+      <input type="text" placeholder="Search here" class="input input-bordered w-24 md:w-auto rounded-full" />
+    </div>
+  </div>
+</header>
+<main>
+  <!-- slider baner section -->
+  <section>
+    <div class="carousel mx-20  mt-9  ">
+      <div id="slide1" class="carousel-item relative w-full">
+        <img src="./images/banner1.png" class="w-full" />
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          
+          <a href="#slide4" class="btn btn-circle">❮</a> 
+          
+          <a href="#slide2" class="btn btn-circle">❯</a>
+          
+        </div>
+      </div> 
+      <div id="slide2" class="carousel-item relative w-full">
+        <img src="./images/banner2.png" class="w-full" />
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide1" class="btn btn-circle">❮</a> 
+         
+          <a href="#slide3" class="btn btn-circle">❯</a>
+         
+        </div>
+      </div> 
+      <div id="slide3" class="carousel-item relative w-full">
+        <img src="./images/banner3.png" class="w-full" />
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide2" class="btn btn-circle">❮</a>
+          
+          <a href="#slide4" class="btn btn-circle">❯</a>
+        </div>
+      </div> 
+      <div id="slide4" class="carousel-item relative w-full">
+        <img src="./images/banner4.png" class="w-full" />
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide3" class="btn btn-circle">❮</a> 
+         
+          <a href="#slide1" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- sub banner -->
+  <section class="flex justify-center gap-5 -mt-20 max-w-screen-lg  max-w-screen-hidden mx-auto bg-slate-500 relative mb-7  ">
+   <div>
+    <img class="w-28" src="./images/fruit1.png" alt="">
+    <p class="text-center">mango</p>
+   </div>
+   <div>
+    <img class="w-24" src="./images/fruit2.png" alt="">
+    <p class="text-center">mango</p>
+   </div>
+   <div>
+    <img class="w-28" src="./images/fruit3.png" alt="">
+    <p class="text-center">mango</p>
+   </div>
+   <div>
+    <img class="w-28" src="./images/fruit4.png" alt="">
+    <p class="text-center">mango</p>
+   </div>
+   <div>
+    <img class="w-28" src="./images/fruit5.png" alt="">
+    <p class="text-center">mango</p>
+   </div>
+  </section>
+  <!-- deal of the day section -->
+  <section>
+    
+  </section>
+</main>
+   
+    <footer></footer>
+
+</body>
+</html>
